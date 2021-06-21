@@ -1,3 +1,7 @@
 {
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5502,
+  "stylelint.configOverrides": {},
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  }
 }

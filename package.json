@@ -1,0 +1,26 @@
+{
+  "name": "webdev-fd-2021-css-grid-nickcrisci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint styles/**/*.css",
+    "lint:fix": "stylelint styles/**/*.css --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mi-classroom/webdev-fd-2021-css-grid-nickcrisci.git"
+  },
+  "author": "Nick Crisci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mi-classroom/webdev-fd-2021-css-grid-nickcrisci/issues"
+  },
+  "homepage": "https://github.com/mi-classroom/webdev-fd-2021-css-grid-nickcrisci#readme",
+  "devDependencies": {
+    "stylelint": "^13.13.1",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0"
+  }
+}

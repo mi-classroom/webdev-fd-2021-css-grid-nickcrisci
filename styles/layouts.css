@@ -1,32 +1,47 @@
 /* Content Wrap
 ###########################################################################  */
 
-.content-wrap{
+.content-wrap {
+  display: flex;
   width: 100vw;
   height: 100vh;
-  background-color: var(--light);
-
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background-color: var(--light);
 }
 
 .content-wrap:nth-child(even) {
   background-color: var(--lighter);
 }
 
-
 /* Card
 ###########################################################################  */
 
-.card{
+.card {
+  display: flex;
+  overflow: hidden;
   width: clamp(300px, 50%, 800px);
+  flex-direction: column;
   background-color: var(--lightest);
   border-radius: var(--radius-m);
-  overflow: hidden;
   box-shadow: var(--n-shadow-l);
 }
 
-.card figcaption{
-  padding: var(--l) var(--m) var(--xl) var(--m);
+.card > p {
+  font-weight: var(--fw-bold);
+}
+
+.card blockquote p {
+  margin-right: var(--xs);
+  margin-left: var(--xs);
+}
+
+.card figcaption {
+  padding: var(--l) var(--xxs) var(--xl) var(--m);
+}
+
+.overview {
+  display: grid;
+  gap: 1vw;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
