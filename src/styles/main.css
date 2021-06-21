@@ -1,0 +1,216 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none; }
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img,
+picture {
+  display: block;
+  max-width: 100%; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+:root {
+  --bfs: 0.5rem;
+  --xxs: calc(var(--bfs) * 1);
+  --xs: calc(var(--bfs) * 1.25);
+  --s: calc(var(--bfs) * 1.6);
+  --m: calc(var(--bfs) * 2);
+  --l: calc(var(--bfs) * 2.5);
+  --xl: calc(var(--bfs) * 3.15);
+  --xxl: calc(var(--bfs) * 4);
+  --xxxl: calc(var(--bfs) * 5);
+  --xxxxl: calc(var(--bfs) * 6.3);
+  --light: #ccc;
+  --lighter: #eee;
+  --lightest: #fff;
+  --dark: #888;
+  --darker: #111;
+  --darkest: #000;
+  --darken: rgba(0, 0, 0, 0.2);
+  --color-text: var(--darker);
+  --color-headline: var(--dark);
+  --color-accent: #f26d3d;
+  /* #CE4BF2 */
+  --color-decoration: #3264a6;
+  /* #3264A6 */
+  --ff-normal: 'IBM Plex Sans', sans-serif;
+  --ff-serif: 'IBM Plex Serif', serif;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --lh-normal: 140%;
+  --lh-tight: 110%;
+  --lh-loose: 150%;
+  --tr-fast: 0.3s;
+  --shadow-l: 0 0 10px rgba(0, 0, 0, 0.5);
+  --n-shadow-l:
+    20px 20px 60px rgba(0, 0, 0, 0.1),
+    -20px -20px 60px rgba(255, 255, 255, 0.1);
+  /* https://neumorphism.io/#e0e0e */
+  --border-width-s: 1px;
+  --border-width-m: 3px;
+  --radius-m: var(--m); }
+
+/* Content Wrap
+###########################################################################  */
+.content-wrap {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light); }
+
+.content-wrap:nth-child(even) {
+  background-color: var(--lighter); }
+
+/* Card
+###########################################################################  */
+.card {
+  display: flex;
+  overflow: hidden;
+  width: clamp(300px, 50%, 800px);
+  flex-direction: column;
+  background-color: var(--lightest);
+  border-radius: var(--radius-m);
+  box-shadow: var(--n-shadow-l); }
+
+.card > p {
+  font-weight: var(--fw-bold); }
+
+.card blockquote p {
+  margin-right: var(--xs);
+  margin-left: var(--xs); }
+
+.card figcaption {
+  padding: var(--l) var(--xxs) var(--xl) var(--m); }
+
+.overview {
+  display: grid;
+  gap: 1vw;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+* {
+  /* TODO: Zeigen */
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: var(--lightest);
+  color: var(--color-text);
+  font-family: var(--ff-normal);
+  font-size: var(--m);
+  font-weight: var(--fw-normal);
+  hyphens: auto;
+  line-height: var(--lh-normal); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-headline);
+  font-weight: bold;
+  hyphens: none; }
+
+h1 {
+  padding-top: var(--xxxl);
+  padding-bottom: var(--xxxl);
+  padding-left: var(--m);
+  color: var(--dark);
+  font-size: var(--xxxl);
+  line-height: var(--lh-tight); }
+
+h2 {
+  padding-top: var(--m);
+  margin-bottom: var(--xxl);
+  color: var(--color-accent);
+  font-size: var(--xxl);
+  line-height: var(--lh-tight); }
+
+h3 {
+  padding-top: var(--xl);
+  margin-bottom: var(--xl);
+  font-size: var(--xl);
+  font-weight: normal; }
+
+img {
+  width: 100%; }
+
+/* Meta Infos
+###########################################################################  */
+.info-list {
+  padding-top: var(--l);
+  padding-bottom: var(--xl); }
+
+.info-list::after {
+  display: none;
+  clear: both;
+  content: '.'; }
+
+.info-list dt {
+  margin-right: var(--xxs);
+  float: left;
+  font-weight: var(--fw-bold); }
+
+.info-list dt::after {
+  content: ':'; }
+
+/* Intro Text
+###########################################################################  */
+.intro-text {
+  width: 100%;
+  max-width: calc(var(--l) * 40);
+  padding: var(--m);
+  font-size: var(--l);
+  line-height: var(--lh-normal); }
+
+/* Additional Infos
+###########################################################################  */
+.additional-infos {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
