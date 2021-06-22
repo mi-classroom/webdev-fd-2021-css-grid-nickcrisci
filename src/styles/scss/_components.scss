@@ -2,8 +2,8 @@
 ###########################################################################  */
 
 .info-list {
-  padding-top: var(--l);
-  padding-bottom: var(--xl);
+  padding-top: $l;
+  padding-bottom: $xl;
 }
 
 .info-list::after {
@@ -13,9 +13,9 @@
 }
 
 .info-list dt {
-  margin-right: var(--xxs);
+  margin-right: $xxs;
   float: left;
-  font-weight: var(--fw-bold);
+  font-weight: $fw-bold;
 }
 
 .info-list dt::after {
@@ -27,10 +27,10 @@
 
 .intro-text {
   width: 100%;
-  max-width: calc(var(--l) * 40);
-  padding: var(--m);
-  font-size: var(--l);
-  line-height: var(--lh-normal);
+  max-width: calc($l * 40);
+  padding: $m;
+  font-size: $l;
+  line-height: $lh-normal;
 }
 
 /* Additional Infos

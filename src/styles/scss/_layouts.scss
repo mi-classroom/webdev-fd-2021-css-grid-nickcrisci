@@ -7,11 +7,11 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: var(--light);
+  background-color: $light;
 }
 
 .content-wrap:nth-child(even) {
-  background-color: var(--lighter);
+  background-color: $lighter;
 }
 
 /* Card
@@ -22,22 +22,22 @@
   overflow: hidden;
   width: clamp(300px, 50%, 800px);
   flex-direction: column;
-  background-color: var(--lightest);
-  border-radius: var(--radius-m);
-  box-shadow: var(--n-shadow-l);
+  background-color: $lightest;
+  border-radius: $radius-m;
+  box-shadow: $n-shadow-l;
 }
 
 .card > p {
-  font-weight: var(--fw-bold);
+  font-weight: $fw-bold;
 }
 
 .card blockquote p {
-  margin-right: var(--xs);
-  margin-left: var(--xs);
+  margin-right: $xs;
+  margin-left: $xs;
 }
 
 .card figcaption {
-  padding: var(--l) var(--xxs) var(--xl) var(--m);
+  padding: $l $xxs $xl $m;
 }
 
 .overview {

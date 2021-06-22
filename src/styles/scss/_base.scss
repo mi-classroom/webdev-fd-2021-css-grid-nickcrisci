@@ -8,13 +8,13 @@ html {
 }
 
 body {
-  background-color: var(--lightest);
-  color: var(--color-text);
-  font-family: var(--ff-normal);
-  font-size: var(--m);
-  font-weight: var(--fw-normal);
+  background-color: $lightest;
+  color: $color-text;
+  font-family: $ff-normal;
+  font-size: $m;
+  font-weight: $fw-normal;
   hyphens: auto;
-  line-height: var(--lh-normal);
+  line-height: $lh-normal;
 }
 
 h1,
@@ -23,32 +23,32 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--color-headline);
+  color: $color-headline;
   font-weight: bold;
   hyphens: none;
 }
 
 h1 {
-  padding-top: var(--xxxl);
-  padding-bottom: var(--xxxl);
-  padding-left: var(--m);
-  color: var(--dark);
-  font-size: var(--xxxl);
-  line-height: var(--lh-tight);
+  padding-top: $xxxl;
+  padding-bottom: $xxxl;
+  padding-left: $m;
+  color: $dark;
+  font-size: $xxxl;
+  line-height: $lh-tight;
 }
 
 h2 {
-  padding-top: var(--m);
-  margin-bottom: var(--xxl);
-  color: var(--color-accent);
-  font-size: var(--xxl);
-  line-height: var(--lh-tight);
+  padding-top: $m;
+  margin-bottom: $xxl;
+  color: $color-accent;
+  font-size: $xxl;
+  line-height: $lh-tight;
 }
 
 h3 {
-  padding-top: var(--xl);
-  margin-bottom: var(--xl);
-  font-size: var(--xl);
+  padding-top: $xl;
+  margin-bottom: $xl;
+  font-size: $xl;
   font-weight: normal;
 }
 
