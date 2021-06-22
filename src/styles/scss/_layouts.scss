@@ -8,10 +8,10 @@
   align-items: center;
   justify-content: center;
   background-color: $light;
-}
 
-.content-wrap:nth-child(even) {
-  background-color: $lighter;
+  :nth-child(even) {
+    background-color: $lighter;
+  }
 }
 
 /* Card
@@ -36,8 +36,10 @@
 
   blockquote {
     p {
-      margin-right: $xs;
-      margin-left: $xs;
+      margin: {
+        right: $xs;
+        left: $xs;
+      }
     }
   }
 }

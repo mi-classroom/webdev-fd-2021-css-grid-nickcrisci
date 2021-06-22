@@ -2,24 +2,26 @@
 ###########################################################################  */
 
 .info-list {
-  padding-top: $l;
-  padding-bottom: $xl;
-}
+  padding: {
+    top: $l;
+    bottom: $xl;
+  }
 
-.info-list::after {
-  display: none;
-  clear: both;
-  content: '.';
-}
+  &::after {
+    display: none;
+    clear: both;
+    content: '.';
+  }
 
-.info-list dt {
-  margin-right: $xxs;
-  float: left;
-  font-weight: $fw-bold;
-}
+  dt {
+    margin-right: $xxs;
+    float: left;
+    font-weight: $fw-bold;
 
-.info-list dt::after {
-  content: ':';
+    &::after {
+      content: ':';
+    }
+  }
 }
 
 /* Intro Text

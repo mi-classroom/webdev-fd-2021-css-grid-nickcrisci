@@ -10,9 +10,12 @@ html {
 body {
   background-color: $lightest;
   color: $color-text;
-  font-family: $ff-normal;
-  font-size: $m;
-  font-weight: $fw-normal;
+  font: {
+    family: $ff-normal;
+    size: $m;
+    weight: $fw-normal;
+  }
+
   hyphens: auto;
   line-height: $lh-normal;
 }
@@ -29,9 +32,12 @@ h6 {
 }
 
 h1 {
-  padding-top: $xxxl;
-  padding-bottom: $xxxl;
-  padding-left: $m;
+  padding: {
+    top: $xxxl;
+    bottom: $xxxl;
+    left: $m;
+  }
+
   color: $dark;
   font-size: $xxxl;
   line-height: $lh-tight;

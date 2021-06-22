@@ -61,9 +61,8 @@ select {
   align-items: center;
   justify-content: center;
   background-color: #ccc; }
-
-.content-wrap:nth-child(even) {
-  background-color: #eee; }
+  .content-wrap :nth-child(even) {
+    background-color: #eee; }
 
 /* Card
 ###########################################################################  */
@@ -143,19 +142,16 @@ img {
 .info-list {
   padding-top: calc($bfs * 2.5);
   padding-bottom: calc($bfs * 3.15); }
-
-.info-list::after {
-  display: none;
-  clear: both;
-  content: '.'; }
-
-.info-list dt {
-  margin-right: calc($bfs * 1);
-  float: left;
-  font-weight: 700; }
-
-.info-list dt::after {
-  content: ':'; }
+  .info-list::after {
+    display: none;
+    clear: both;
+    content: '.'; }
+  .info-list dt {
+    margin-right: calc($bfs * 1);
+    float: left;
+    font-weight: 700; }
+    .info-list dt::after {
+      content: ':'; }
 
 /* Intro Text
 ###########################################################################  */
