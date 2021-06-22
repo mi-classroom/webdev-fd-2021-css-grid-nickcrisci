@@ -2,8 +2,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /* Remove default margin */
 body,
@@ -16,53 +15,43 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
-}
+  margin: 0; }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
-  list-style: none;
-}
+  list-style: none; }
 
 /* Set core root defaults */
 html:focus-within {
-  scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
 
 /* Set core body defaults */
 body {
   min-height: 100vh;
   line-height: 1.5;
-  text-rendering: optimizeSpeed;
-}
+  text-rendering: optimizeSpeed; }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
+  text-decoration-skip-ink: auto; }
 
 /* Make images easier to work with */
 img,
 picture {
   display: block;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 /* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
 select {
-  font: inherit;
-}
+  font: inherit; }
 
 /* #CE4BF2 */
-
 /* #3264A6 */
-
 /* https://neumorphism.io/#e0e0e */
-
 /* Content Wrap
 ###########################################################################  */
 .content-wrap {
@@ -71,12 +60,10 @@ select {
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: #ccc;
-}
+  background-color: #ccc; }
 
 .content-wrap:nth-child(even) {
-  background-color: #eee;
-}
+  background-color: #eee; }
 
 /* Card
 ###########################################################################  */
@@ -87,36 +74,26 @@ select {
   flex-direction: column;
   background-color: #fff;
   border-radius: calc($bfs * 2);
-  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1), -20px -20px 60px rgba(255, 255, 255, 0.1);
-}
-
-.card > p {
-  font-weight: 700;
-}
-
-.card blockquote p {
-  margin-right: calc($bfs * 1.25);
-  margin-left: calc($bfs * 1.25);
-}
-
-.card figcaption {
-  padding: calc($bfs * 2.5) calc($bfs * 1) calc($bfs * 3.15) calc($bfs * 2);
-}
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1), -20px -20px 60px rgba(255, 255, 255, 0.1); }
+  .card figcaption {
+    padding: calc($bfs * 2.5) calc($bfs * 1) calc($bfs * 3.15) calc($bfs * 2); }
+  .card p {
+    font-weight: 700; }
+  .card blockquote p {
+    margin-right: calc($bfs * 1.25);
+    margin-left: calc($bfs * 1.25); }
 
 .overview {
   display: grid;
   gap: 1vw;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
 * {
   /* TODO: Zeigen */
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
 
 body {
   background-color: #fff;
@@ -125,8 +102,7 @@ body {
   font-size: calc($bfs * 2);
   font-weight: 400;
   hyphens: auto;
-  line-height: 140%;
-}
+  line-height: 140%; }
 
 h1,
 h2,
@@ -136,8 +112,7 @@ h5,
 h6 {
   color: #888;
   font-weight: bold;
-  hyphens: none;
-}
+  hyphens: none; }
 
 h1 {
   padding-top: calc($bfs * 5);
@@ -145,50 +120,42 @@ h1 {
   padding-left: calc($bfs * 2);
   color: #888;
   font-size: calc($bfs * 5);
-  line-height: 110%;
-}
+  line-height: 110%; }
 
 h2 {
   padding-top: calc($bfs * 2);
   margin-bottom: calc($bfs * 4);
   color: #f26d3d;
   font-size: calc($bfs * 4);
-  line-height: 110%;
-}
+  line-height: 110%; }
 
 h3 {
   padding-top: calc($bfs * 3.15);
   margin-bottom: calc($bfs * 3.15);
   font-size: calc($bfs * 3.15);
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 img {
-  width: 100%;
-}
+  width: 100%; }
 
 /* Meta Infos
 ###########################################################################  */
 .info-list {
   padding-top: calc($bfs * 2.5);
-  padding-bottom: calc($bfs * 3.15);
-}
+  padding-bottom: calc($bfs * 3.15); }
 
 .info-list::after {
   display: none;
   clear: both;
-  content: '.';
-}
+  content: '.'; }
 
 .info-list dt {
   margin-right: calc($bfs * 1);
   float: left;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 .info-list dt::after {
-  content: ':';
-}
+  content: ':'; }
 
 /* Intro Text
 ###########################################################################  */
@@ -197,11 +164,11 @@ img {
   max-width: calc($l * 40);
   padding: calc($bfs * 2);
   font-size: calc($bfs * 2.5);
-  line-height: 140%;
-}
+  line-height: 140%; }
 
 /* Additional Infos
 ###########################################################################  */
 .additional-infos {
-  display: none;
-}
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */

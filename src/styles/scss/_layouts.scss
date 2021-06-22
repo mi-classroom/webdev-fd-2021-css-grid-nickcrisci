@@ -25,19 +25,21 @@
   background-color: $lightest;
   border-radius: $radius-m;
   box-shadow: $n-shadow-l;
-}
 
-.card > p {
-  font-weight: $fw-bold;
-}
+  figcaption {
+    padding: $l $xxs $xl $m;
+  }
 
-.card blockquote p {
-  margin-right: $xs;
-  margin-left: $xs;
-}
+  p {
+    font-weight: $fw-bold;
+  }
 
-.card figcaption {
-  padding: $l $xxs $xl $m;
+  blockquote {
+    p {
+      margin-right: $xs;
+      margin-left: $xs;
+    }
+  }
 }
 
 .overview {
