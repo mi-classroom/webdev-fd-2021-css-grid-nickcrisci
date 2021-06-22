@@ -21,10 +21,12 @@
   display: flex;
   overflow: hidden;
   width: clamp(300px, 50%, 800px);
+  flex: 1 0 10em;
   flex-direction: column;
   background-color: $lightest;
   border-radius: $radius-m;
   box-shadow: $n-shadow-l;
+  transition: flex-basis 500ms ease-in-out;
 
   figcaption {
     padding: $l $xxs $xl $m;
@@ -32,6 +34,12 @@
 
   p {
     font-weight: $fw-bold;
+  }
+
+  img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: display 500ms ease-in-out;
   }
 
   blockquote {
@@ -42,10 +50,13 @@
       }
     }
   }
+
+  &:hover {
+    flex-basis: 20em;
+  }
 }
 
 .overview {
-  display: grid;
-  gap: 1vw;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: row;
 }
