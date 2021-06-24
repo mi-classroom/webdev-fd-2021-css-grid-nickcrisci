@@ -1,0 +1,63 @@
+* {
+  /* TODO: Zeigen */
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $lightest;
+  color: $color-text;
+  font: {
+    family: $ff-normal;
+    size: $m;
+    weight: $fw-normal;
+  }
+
+  hyphens: auto;
+  line-height: $lh-normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-headline;
+  font-weight: bold;
+  hyphens: none;
+}
+
+h1 {
+  padding: {
+    top: $xxxl;
+    bottom: $xxxl;
+    left: $m;
+  }
+
+  color: $dark;
+  font-size: $xxxl;
+  line-height: $lh-tight;
+}
+
+h2 {
+  padding-top: $m;
+  margin-bottom: $xxl;
+  color: $color-accent;
+  font-size: $xxl;
+  line-height: $lh-tight;
+}
+
+h3 {
+  padding-top: $xl;
+  margin-bottom: $xl;
+  font-size: $xl;
+  font-weight: normal;
+}
+
+img {
+  width: 100%;
+}

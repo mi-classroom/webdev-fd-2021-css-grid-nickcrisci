@@ -1,0 +1,62 @@
+/* Content Wrap
+###########################################################################  */
+
+.content-wrap {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: $light;
+
+  :nth-child(even) {
+    background-color: $lighter;
+  }
+}
+
+/* Card
+###########################################################################  */
+
+.card {
+  display: flex;
+  overflow: hidden;
+  width: clamp(300px, 50%, 800px);
+  flex: 1 0 10em;
+  flex-direction: column;
+  background-color: $lightest;
+  border-radius: $radius-m;
+  box-shadow: $n-shadow-l;
+  transition: flex-basis 500ms ease-in-out;
+
+  figcaption {
+    padding: $l $xxs $xl $m;
+  }
+
+  p {
+    font-weight: $fw-bold;
+  }
+
+  img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: display 500ms ease-in-out;
+  }
+
+  blockquote {
+    p {
+      margin: {
+        right: $xs;
+        left: $xs;
+      }
+    }
+  }
+
+  &:hover {
+    flex-basis: 20em;
+  }
+}
+
+.overview {
+  display: flex;
+  flex-direction: row;
+}

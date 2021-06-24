@@ -1,0 +1,33 @@
+{
+  "name": "webdev-fd-2021-css-grid-nickcrisci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint src/styles/scss/**/*.scss",
+    "lint:fix": "stylelint src/styles/scss/**/*.scss --fix",
+    "dev:css": "node-sass --source-map true src/styles/scss src/styles/scss/main.scss -o src/styles/",
+    "watch:sass": "node-sass --source-map true --watch src/styles/scss src/styles/scss/main.scss -o src/styles/",
+    "watch": "npm-run-all --parallel dev:css watch:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mi-classroom/webdev-fd-2021-css-grid-nickcrisci.git"
+  },
+  "author": "Nick Crisci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mi-classroom/webdev-fd-2021-css-grid-nickcrisci/issues"
+  },
+  "homepage": "https://github.com/mi-classroom/webdev-fd-2021-css-grid-nickcrisci#readme",
+  "devDependencies": {
+    "stylelint": "^13.13.1",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
